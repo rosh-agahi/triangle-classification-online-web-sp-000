@@ -15,5 +15,10 @@ class Triangle
       puts "scalene"
     end
   end
+  
+  class TraingleError < StandardError
+    def message
+      ""
+  end
 
 end
