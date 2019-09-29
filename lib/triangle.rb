@@ -11,6 +11,10 @@ class Triangle
       :equilateral
     elsif @side_one == @side_two != @side_three || @side_two == @side_three != @side_one
       :isosceles
-    elsif 
+    elsif @side_one != @side_two && @side_two != @side_three
+      :scalene
+    else 
+      raise TraingleError
+    end
 
 end
