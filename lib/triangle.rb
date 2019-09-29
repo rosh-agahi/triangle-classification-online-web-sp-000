@@ -2,8 +2,10 @@ class Triangle
   
   attr_accessor :side_one, :side_two, :side_three
   
-  def initialize(sides)
-    sides.each {|side,size| self.send(("#{side}="),size)
+  def initialize(side_one, side_two, side_three)
+    @side_one = side_one
+    @side_two = side_two
+    @side_three = side_three
   end
   
   def kind
