@@ -8,11 +8,11 @@ class Triangle
   
   def kind 
     if @side_one == @side_two == @side_three
-      "equilateral"
+      puts "equilateral"
     elsif @side_one == @side_two != @side_three || @side_two == @side_three != @side_one
-      "isosceles"
+      puts "isosceles"
     else @side_one != @side_two && @side_two != @side_three
-      "scalene"
+      puts "scalene"
     end
   end
 
