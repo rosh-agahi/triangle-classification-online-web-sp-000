@@ -2,9 +2,9 @@ class Triangle
   
   attr_accessor :side_one, :side_two, :side_three
   
-  def initialize(sides)
-    sides.each {|side,size| self.send(("#{side}="),size)
-  end
+#  def initialize(sides)
+#    sides.each {|side,size| self.send(("#{side}="),size)
+#  end
   
   def kind 
     if @side_one == @side_two == @side_three
